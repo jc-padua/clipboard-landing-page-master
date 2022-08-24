@@ -1,0 +1,246 @@
+:root {
+    /* ### Primary */
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    /* ### Neutral */
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+}
+
+p,
+a {
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+}
+
+/* Utilities */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section-text {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    color: white;
+    background-color: var(--Strong-Cyan);
+    display: block;
+    padding: 1rem;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.btn-mac {
+    background-color: var(--Light-Blue);
+}
+
+.cta-btn {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.container {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+/* CTA Top  */
+.cta-top {
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-top__logo {
+    width: 7rem;
+    margin: 5rem 0 5rem;
+}
+
+
+/* Features  */
+.feature-title>*,
+.feature-text>*,
+.feature-items>*,
+.feature-items2>*. .col-item>* {
+    margin-bottom: .75rem;
+}
+
+.col {
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.col-item {
+    margin: 4rem 0;
+}
+
+.feature-text {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.feature-img {
+    padding: 0 2rem;
+}
+
+.feature-icon {
+    width: 3rem;
+}
+
+/* Brands  */
+.brands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem 0;
+}
+
+.brands-icon {
+    width: 10rem;
+}
+
+/* CTA Bottom  */
+
+.info {
+    text-align: center;
+    background-color: rgb(243, 245, 245);
+}
+
+.info-logo {
+    width: 4rem;
+    margin: 2rem 0;
+}
+
+.info-link {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.socmed-icon {
+    margin: 2rem 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+@media (min-width:769px) {
+    .container {
+        padding: 3rem 10rem;
+    }
+
+    .cta-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        width: 60%;
+    }
+
+    .feature-items,
+    .feature-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .feature-text {
+        text-align: left;
+        margin-left: 5rem;
+        width: 40%;
+    }
+
+    .feature-presentation {
+        width: 40rem;
+        margin-left: -15rem;
+    }
+
+    .feature-presentation2 {
+        width: 50rem;
+    }
+
+    .col {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .col-text {
+        margin-top: 1.5rem;
+    }
+
+    .brands {
+        flex-direction: row;
+    }
+
+    .brands-icon {
+        max-width: 8rem;
+    }
+
+    .cta-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .info-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info-details__img {
+        margin: 0 7rem;
+    }
+
+    .info-link {
+        display: inherit;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .socmed {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+    }
+
+}
